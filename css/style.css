@@ -1,0 +1,74 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* common */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Pretendard-Regular";
+  font-size: 1.4rem;
+  min-width: 1000px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+/* 스크린 리더기용 
+margin 대신 text-indent 사용*/
+.screen-out {
+  display: inline-block;
+  text-indent: -9999px;
+}
+/* header */
+header {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo,
+a,
+button {
+  cursor: pointer;
+}
+
+.center-nav ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.center-nav li {
+  font-weight: 900;
+}
+
+/* 유틸리티 */
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.util-search {
+  background-image: url(/img/Search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.util-english {
+}
+.util-darkMode {
+}
