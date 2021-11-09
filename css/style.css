@@ -14,7 +14,7 @@ html {
 body {
   font-family: "Pretendard-Regular";
   font-size: 1.4rem;
-  min-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 a {
@@ -24,6 +24,8 @@ a {
 .btn {
   border: none;
   background-color: transparent;
+  width: 36px;
+  height: 36px;
 }
 
 /* 스크린 리더기용 
@@ -34,7 +36,9 @@ margin 대신 text-indent 사용*/
 }
 /* header */
 header {
-  margin: 10px 0;
+  max-width: 1000px;
+  height: 72px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,29 +50,63 @@ button {
   cursor: pointer;
 }
 
-.center-nav ul {
+.main-nav ul {
   display: flex;
   width: 300px;
   justify-content: space-between;
   margin-bottom: 14px;
 }
-.center-nav li {
+.main-nav li {
   font-weight: 900;
 }
 
 /* 유틸리티 */
-.right-nav {
+.util-nav {
   display: flex;
   justify-content: space-between;
   width: 100px;
 }
 
+/* background-image 넣기????? */
 .util-search {
-  background-image: url(/img/Search.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url(/img/Search.png) no-repeat cover;
 }
 .util-english {
+  background: url(/img/Globe.png) no-repeat 20px;
 }
 .util-darkMode {
+  background: url(/img/Crescent\ Moon.png) no-repeat 20px;
+}
+
+/* main */
+main {
+  /* max-width: 1000px; */
+}
+main .today-kakao::before {
+  display: inline-block;
+  content: "";
+
+  background: url(/img/9.png) no-repeat 24px 24px;
+}
+
+main .today-kakao {
+  color: #333;
+  font-size: 24px;
+  font-weight: 900;
+}
+main .item-box-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1050px;
+  height: 876px;
+}
+main .item-box {
+  width: 480px;
+  background-color: #eee;
+  padding: 10px;
+}
+main .article-left {
+}
+main .article-right {
+  display: flex;
 }
